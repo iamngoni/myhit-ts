@@ -1,0 +1,20 @@
+{
+  "name": "myhit-ts",
+  "version": "1.0.0",
+  "description": "myhit backend",
+  "main": "/dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ngonidzashe Mangudya",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamngoni/myhit-ts.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/iamngoni/myhit-ts/issues"
+  },
+  "homepage": "https://github.com/iamngoni/myhit-ts#readme"
+}
