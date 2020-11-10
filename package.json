@@ -4,7 +4,7 @@
   "description": "myhit backend",
   "main": "/dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "author": "Ngonidzashe Mangudya",
   "license": "MIT",
@@ -16,5 +16,27 @@
   "bugs": {
     "url": "https://github.com/iamngoni/myhit-ts/issues"
   },
-  "homepage": "https://github.com/iamngoni/myhit-ts#readme"
+  "homepage": "https://github.com/iamngoni/myhit-ts#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.7",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "typescript": "^4.0.5"
+  }
 }
